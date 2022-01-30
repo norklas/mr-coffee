@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Melanson - Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>Nick Melanson - Portfolio</title>
 </head>
 
 <body>
@@ -17,9 +21,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="">Resume</a></li>
             </ul>
         </nav>
@@ -27,16 +31,20 @@
     <main>
         <!-- Hero -->
         <section class="hero-section">
-            <div>
-                <h2>Cool subtitle here!</h2>
+            <div class="hero-container">
+                <div class="typewriter">
+                    <h2>Hello, how are you?</h2>
+                </div>
             </div>
-            <img src="./assets/images/hero-img.jpg" alt="">
         </section>
 
         <!-- About Me -->
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <aside>
-                <h2>About Me</h2>
+                <h2>About
+                    <br>
+                    Me
+                </h2>
             </aside>
             <article>
                 <p>Hi, I'm Nick! I'm 33, and live in Bristol, CT. I have a bunch of hobbies, but my main ones are
@@ -57,7 +65,7 @@
         </section>
 
         <!-- Work -->
-        <section class="work-section">
+        <section class="work-section" id="work">
             <aside>
                 <h2>Work</h2>
             </aside>
@@ -68,6 +76,7 @@
                         <h3>Run Buddy</h3>
                         <p>HTML/CSS</p>
                     </div>
+                    <div class="overlay"></div>
                 </article>
                 <article class="card-2">
                     <img src="./assets/images/image-placeholder-500x500.jpg" alt="">
@@ -75,6 +84,7 @@
                         <h3>Placeholder</h3>
                         <p>Placeholder</p>
                     </div>
+                    <div class="overlay"></div>
                 </article>
                 <article class="card-2">
                     <img src="./assets/images/image-placeholder-500x500.jpg" alt="">
@@ -82,6 +92,7 @@
                         <h3>Placeholder</h3>
                         <p>Placeholder</p>
                     </div>
+                    <div class="overlay"></div>
                 </article>
                 <article class="card-2">
                     <img src="./assets/images/image-placeholder-500x500.jpg" alt="">
@@ -89,6 +100,7 @@
                         <h3>Placeholder</h3>
                         <p>Placeholder</p>
                     </div>
+                    <div class="overlay"></div>
                 </article>
                 <article class="card-2">
                     <img src="./assets/images/image-placeholder-500x500.jpg" alt="">
@@ -96,22 +108,26 @@
                         <h3>Placeholder</h3>
                         <p>Placeholder</p>
                     </div>
+                    <div class="overlay"></div>
                 </article>
             </div>
         </section>
     </main>
     <!-- Footer and Contact Me-->
-    <footer>
+    <footer id="contact">
         <aside>
-            <h2>Contact Me</h2>
+            <h2>Contact
+                <br>
+                Me
+            </h2>
         </aside>
         <div class="footer-links">
             <ul>
-                <li><a href="">860.480.3279</a></li>
-                <li><a href="">GitHub</a></li>
+                <li><a href="tel:860-480-3279">860.480.3279</a></li>
+                <li><a href="https://github.com/norklas">GitHub</a></li>
                 <li><a href="">Twitter</a></li>
-                <li><a href="">Dev.to</a></li>
-                <li><a href="">Email</a></li>
+                <li><a href="https://dev.to/norklas">Dev.to</a></li>
+                <li><a href="mailto:nickm890@gmail.com">Email</a></li>
             </ul>
         </div>
     </footer>
