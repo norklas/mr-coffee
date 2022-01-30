@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling Begins */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    background-color: #efefef;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+header h1 {
+    color: #a9a9a9;
+    background-color: #caebf2;
+    padding: 0px 30px 0px 100px;
+    align-self: flex-start;
+}
+
+/* Header Styling Ends */
+
+/* Hero Styling Begins */
+
+.hero-section {
+    position: relative;
+    margin: 0px 0px 30px 0;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section div {
+    position: absolute;
+    display: inline-block;
+    bottom: 25px;
+    right: 100px;
+    z-index: 10;
+    width: auto;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Hero Styling Ends */
+
+/* About Me Section Styling Begins */
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+    width: 100%;
+}
+
+.about-me aside {
+    font-size: 30px;
+    text-align: right;
+    width: 20%;
+    border-right: 5px solid;
+    padding: 10px;
+}
+
+.about-me article {
+    margin: 10px;
+    width: 75%;
+}
+
+.about-me p {
+    margin: 10px 30px 10px 30px;
+    line-height: 1.5;
+}
+
+/* About Me Section Styling Ends */
+
+/* Work Section Styling Begins */
+
+.work-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.work-section aside {
+    font-size: 30px;
+    text-align: right;
+    width: 20%;
+    border-right: 5px solid;
+    padding: 10px;
+}
+
+/* Work Section Styling Ends */
+
+/* Work Section Project Cards Styling Begins */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.run-buddy {
+    width: 100%;
+    position: relative;
+}
+
+.run-buddy img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-2 {
+    width: 50%;
+    position: relative;
+}
+
+.card-2 img {
+    height: 150px;
+    width: 100%;
+}
+
+.frame {
+    position: absolute;
+    z-index: 40;
+    bottom: 20px;
+    padding: 5px;
+}
+
+.frame h3 {
+    font-size: 20px;
+}
+
+/* Work Section Project Cards Styling Ends */
+
+/* Footer Styling Begins */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 30px 0px;
+}
+
+footer aside {
+    font-size: 30px;
+    text-align: right;
+    width: 20%;
+    border-right: 5px solid;
+    padding: 10px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-links ul li a {
+    padding: 10px 15px;
+}
+
+/* Footer Styling Ends */
