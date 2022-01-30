@@ -37,16 +37,41 @@ header nav ul {
 }
 
 header nav a {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding: 0px 15px;
+  color: #817ac0;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 1s ease-out;
   text-decoration-color: #817ac0;
   text-decoration-thickness: 0.125em;
   text-underline-offset: 2px;
 }
 
-header nav ul li a {
-  padding: 10px 15px;
-  color: #817ac0;
-  font-size: 28px;
-  font-weight: bold;
+header nav a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100%));
+  width: 100%;
+  height: 100%;
+  background-color: #817ac0;
+  transition: transform 0.15s ease-out;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+header nav a:hover::before {
+  transform: translateY(0);
+  transition: transform 0.15s ease-out;
 }
 
 header h1 {
@@ -281,9 +306,40 @@ footer aside {
 
 .footer-links a {
   color: #817ac0;
+  font-weight: bold;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding: 0px 15px;
+  font-weight: bold;
+  transition: color 1s ease-out;
   text-decoration-color: #817ac0;
   text-decoration-thickness: 0.125em;
   text-underline-offset: 2px;
+}
+
+.footer-links a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100%));
+  width: 100%;
+  height: 100%;
+  background-color: #817ac0;
+  transition: transform 0.15s ease-out;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-links a:hover::before {
+  transform: translateY(0);
+  transition: transform 0.15s ease-out;
 }
 
 /* Footer Styling Ends */
