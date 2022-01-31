@@ -1,3 +1,9 @@
+:root {
+  --white: #fff;
+  --primary-color: #817ac0;
+  --responsive-color: #424781;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +11,16 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--white);
   font-family: "Source Sans Pro", sans-serif;
+}
+
+aside {
+  font-size: 40px;
+  text-align: right;
+  width: 15%;
+  border-right: 5px solid;
+  padding: 10px;
 }
 
 /* Header Styling Begins */
@@ -42,11 +56,11 @@ header nav a {
   overflow: hidden;
   vertical-align: bottom;
   padding: 0px 15px;
-  color: #817ac0;
+  color: var(--primary-color);
   font-size: 28px;
   font-weight: bold;
   transition: color 1s ease-out;
-  text-decoration-color: #817ac0;
+  text-decoration-color: var(--primary-color);
   text-decoration-thickness: 0.125em;
   text-underline-offset: 2px;
 }
@@ -60,12 +74,12 @@ header nav a::before {
   transform: translateY(calc(100%));
   width: 100%;
   height: 100%;
-  background-color: #817ac0;
+  background-color: var(--primary-color);
   transition: transform 0.15s ease-out;
 }
 
 header nav a:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 header nav a:hover::before {
@@ -73,8 +87,9 @@ header nav a:hover::before {
   transition: transform 0.15s ease-out;
 }
 
-header h1 {
-  color: #fff;
+header h1 a {
+  text-decoration: none;
+  color: var(--white);
   padding: 0px 30px 0px 100px;
   font-size: 50px;
 }
@@ -109,11 +124,11 @@ header h1 {
 
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #817ac0; /* The typwriter cursor */
+  border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  color: #817ac0;
+  color: var(--primary-color);
   font-size: 36px;
 }
 
@@ -134,7 +149,7 @@ header h1 {
     border-color: transparent;
   }
   50% {
-    border-color: #817ac0;
+    border-color: var(--primary-color);
   }
 }
 
@@ -148,15 +163,7 @@ header h1 {
   margin: 30px 0 30px 0;
   width: 100%;
   padding: 10px 50px;
-  color: #817ac0;
-}
-
-.about-me aside {
-  font-size: 40px;
-  text-align: right;
-  width: 15%;
-  border-right: 5px solid;
-  padding: 10px;
+  color: var(--primary-color);
 }
 
 .about-me article {
@@ -182,12 +189,7 @@ header h1 {
 }
 
 .work-section aside {
-  font-size: 40px;
-  text-align: right;
-  width: 15%;
-  border-right: 5px solid;
-  padding: 10px;
-  color: #817ac0;
+  color: var(--primary-color);
 }
 
 /* Work Section Styling Ends */
@@ -205,7 +207,7 @@ header h1 {
   width: 100%;
   position: relative;
   margin: 10px;
-  border: 4px solid #817ac0;
+  border: 4px solid var(--primary-color);
 }
 
 .run-buddy img {
@@ -219,7 +221,7 @@ header h1 {
   width: 48%;
   position: relative;
   margin: 10px;
-  border: 4px solid #817ac0;
+  border: 4px solid var(--primary-color);
 }
 
 .card-2 img {
@@ -233,12 +235,19 @@ header h1 {
   z-index: 40;
   bottom: 20px;
   padding: 5px;
-  background-color: #817ac0;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .frame h3 {
   font-size: 20px;
+}
+
+.frame a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
 }
 
 .overlay {
@@ -274,15 +283,7 @@ footer {
   height: auto;
   padding: 10px 50px;
   font-size: 24px;
-  color: #817ac0;
-}
-
-footer aside {
-  font-size: 40px;
-  text-align: right;
-  width: 15%;
-  border-right: 5px solid;
-  padding: 10px;
+  color: var(--primary-color);
 }
 
 .footer-links {
@@ -304,7 +305,7 @@ footer aside {
 }
 
 .footer-links a {
-  color: #817ac0;
+  color: var(--primary-color);
   font-weight: bold;
   position: relative;
   z-index: 0;
@@ -314,7 +315,7 @@ footer aside {
   padding: 0px 15px;
   font-weight: bold;
   transition: color 1s ease-out;
-  text-decoration-color: #817ac0;
+  text-decoration-color: var(--primary-color);
   text-decoration-thickness: 0.125em;
   text-underline-offset: 2px;
 }
@@ -328,12 +329,12 @@ footer aside {
   transform: translateY(calc(100%));
   width: 100%;
   height: 100%;
-  background-color: #817ac0;
+  background-color: var(--primary-color);
   transition: transform 0.15s ease-out;
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .footer-links a:hover::before {
@@ -345,8 +346,8 @@ footer aside {
 
 /* Media Queries */
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+/* Large devices (desktops, less than 1280px) */
+@media (max-width: 1281.98px) {
   /* Hero Section Styling Begins */
   .hero-section {
     height: 85vh;
@@ -403,7 +404,7 @@ footer aside {
     flex-wrap: wrap;
   }
 
-  header h1 {
+  header h1 a {
     padding: 0 0;
     width: 100%;
   }
@@ -530,7 +531,7 @@ footer aside {
     background-position: 50%;
   }
 
-  header h1 {
+  header h1 a {
     font-size: 38px;
   }
 
@@ -539,13 +540,13 @@ footer aside {
   }
 
   header nav a {
-    color: #424781;
-    text-decoration-color: #424781;
+    color: var(--responsive-color);
+    text-decoration-color: var(--responsive-color);
     padding: 0 5px 0 5px;
   }
 
   header nav a::before {
-    background-color: #424781;
+    background-color: var(--responsive-color);
   }
 
   /* Header Styling Ends */
@@ -558,8 +559,8 @@ footer aside {
   }
 
   .typewriter h2 {
-    border-right: #424781;
-    color: #424781;
+    border-right: var(--responsive-color);
+    color: var(--responsive-color);
   }
 
   @keyframes blink-caret {
@@ -568,7 +569,7 @@ footer aside {
       border-color: transparent;
     }
     50% {
-      border-color: #424781;
+      border-color: var(--responsive-color);
     }
   }
 
@@ -577,7 +578,7 @@ footer aside {
   /* About Me Section Styling Begins */
 
   .about-me {
-    color: #424781;
+    color: var(--responsive-color);
     padding: 0 0 0 0;
   }
 
@@ -608,24 +609,24 @@ footer aside {
   }
 
   .work-section aside {
-    color: #424781;
+    color: var(--responsive-color);
   }
 
   /* Work Section Styling Ends */
 
   /* Work Section Cards Styling Begins */
 
-  .run-buddy {
-    border: 4px solid #424781;
+  .run-buddy,
+  .card-2 {
+    border: 4px solid var(--responsive-color);
   }
 
   .card-2 {
-    border: 4px solid #424781;
     width: 42%;
   }
 
   .frame {
-    background-color: #424781;
+    background-color: var(--responsive-color);
   }
 
   /* Work Section Cards Styling Ends */
@@ -633,7 +634,7 @@ footer aside {
   /* Contact and Footer Section Styling Begins */
 
   footer {
-    color: #424781;
+    color: var(--responsive-color);
   }
 
   footer h2 {
@@ -646,12 +647,12 @@ footer aside {
   }
 
   .footer-links a {
-    color: #424781;
-    text-decoration-color: #424781;
+    color: var(--responsive-color);
+    text-decoration-color: var(--responsive-color);
   }
 
   .footer-links a::before {
-    background-color: #424781;
+    background-color: var(--responsive-color);
   }
 
   /* Contact and Footer Section Styling Ends */
